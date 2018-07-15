@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*@import '~@angular/material/prebuilt-themes/indigo-pink.css';*/
+
+$color : #0eb6e2;
+$lightBlue : #99e9fd;
+
+html {
+  /*height: 100%;*/
+  /*margin: 0;*/
+}
+body{
+	/*background-color:#194993;*/
+  /*background-image: url("/assets/images/login-page-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background-color: #0f5b8c;
+  height: 100%;
+}
+
+.content{
+  position: absolute; top: 280px; z-index: 111; width: 80%; left: 4%
+}
+
+select[multiple], select[size]{
+  font-size: 18px;
+  padding: 0;
+  border: 1px solid $color;
+  border-radius: 0;
+
+  option{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+select::-webkit-scrollbar {
+  width: 0.4em;
+  border-right: 1px solid $color;
+  background: white;
+}
+ 
+select::-webkit-scrollbar-track {
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);*/
+}
+ 
+select::-webkit-scrollbar-thumb {
+  background-color: $color;
+  outline: 1px solid $color;
+}
+select[multiple], select[size]{
+  font-size: 18px;
+  padding: 0;
+  border: 1px solid $color;
+
+  option{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  option:hover {
+      color: white;
+      background: linear-gradient(0deg, $color 0%, $color 100%);
+  }
+  option:checked{ 
+    box-shadow: 0 0 10px 100px $lightBlue inset;
+  }
+  /*option:checked {
+      background: linear-gradient(0deg, $lightBlue 0%, $lightBlue 100%);
+      background: -moz-linear-gradient(0deg, $lightBlue 0%, $lightBlue 100%);
+      background: -webkit-gradient(0deg, $lightBlue 0%, $lightBlue 100%);
+
+  }*/
+}
+
+label{
+  font-size: 16px;
+}
+
+/*****  for login page******/
+
+/*.mat-form-field-appearance-legacy .mat-form-field-underline{
+  background-color: #fff !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-label{
+  color: #fff !important;
+}*/
+
+/****************** global classes ****************/
+
+.mt-8{ margin-top: 8em; }
+.mt-7{ margin-top: 7em; }
+.mt-6{ margin-top: 6em; }
+.mt-5{ margin-top: 5em; }
+.mt-4{ margin-top: 4em; }
+.mt-3{ margin-top: 3em; }
+.mt-2{ margin-top: 2em; }
+.mt-1{ margin-top: 1em; }
+.mb-7{ margin-bottom: 7em; }
+.mb-6{ margin-bottom: 6em; }
+.mb-5{ margin-bottom: 5em; }
+.mb-4{ margin-bottom: 4em; }
+.mb-3{ margin-bottom: 3em; }
+.mb-2{ margin-bottom: 2em; }
+.mb-1{ margin-bottom: 1em; }
+
+
+.input-group .form-control:first-child, .input-group-btn:last-child>.btn{
+  border-radius: 0;
+}

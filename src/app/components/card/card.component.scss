@@ -1,0 +1,106 @@
+.card-content{
+  max-width: 400px;
+  margin: 0 auto;
+
+  .card{
+    width: 100%;
+    overflow: hidden;
+    margin: 50px auto;
+    border: 0px;
+    box-shadow: 0px 60px 100px -50px #333;
+    border-radius: 20px;
+    max-width: 400px;
+    transition: transform .2s;
+
+    .hex {
+      position: relative;
+      top: -19em;
+      margin: 0 auto;
+      width: 17em;
+      height: 28.3em;
+      border-radius: 2em/1em;
+      background: #eee;
+      /*box-shadow: 20px 0px 90px 1px #222;*/
+      transition: opacity .5s;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
+    .hex:before, .hex:after {
+      position: absolute;
+      width: inherit; height: inherit;
+      border-radius: inherit;
+      background: inherit;
+      content: '';
+    }
+    
+    .hex:before {
+        -webkit-transform: rotate(60deg);
+      transform: rotate(60deg);
+    }
+    .hex:after {
+        -webkit-transform: rotate(-60deg);
+      transform: rotate(-60deg);
+    }
+
+    .card-body{
+      padding: 2rem .5rem;
+      text-align: right;
+    
+      .list-group{
+        margin-bottom: 20px;
+        padding-right: 0;
+      }
+      .list-group-item{
+        margin-bottom: 4px;
+        border: 0px;
+        font-size: 18px;
+      }
+      .list-group-item:not(.active){
+        background-color: rgba(0,0,0,.2);
+        color: #fff;
+      }
+      .list-group-item.active{
+        background-color: white;
+        color: #555;
+        border-color: white;
+      }
+    }
+    .title{
+      position: relative;
+      margin: -26.5em 0 6em 0;
+      color: orange;
+      text-align: center;
+      
+      h2{
+        margin-bottom: 30px;
+        font-size: 1.9em
+      }
+      hr{
+        width: 120px;
+        border-top: 4px dotted #555;
+      }
+    }
+  }
+  .card-footer{
+    .btn{
+      margin: 10px 5px 0 0;
+    }
+  }
+
+  .card:hover{
+    /*transform: scale(1.12);*/
+  }
+  /*.zoom{
+    transform: scale(1.12);
+  }*/
+}
+/*@media (max-width: 1500px){
+  .hex{
+    width: 14em;
+    height: 24.1em;
+    border-radius: 3em/1.3em;
+  }
+  .title{
+    margin: -22.5em 0 6em 0;
+  }
+} */

@@ -1,0 +1,29 @@
+
+.nav-tabs{
+	border-color: transparent;
+	font-size: 1.8em;
+	padding-right: 0px;
+	
+	li{
+		float: right;
+
+		a{
+			color: #aaa;
+		}
+		a:hover, a:focus{
+			background-color: transparent;
+			border-color: transparent;
+			color: #222;
+		}
+	}
+	li.active{
+		a, a:hover, a:focus{
+			background-color: transparent;
+			border-color: transparent;
+			color: #222;
+		}
+	}
+}
+h3, h4{
+	margin-bottom: 30px;
+}

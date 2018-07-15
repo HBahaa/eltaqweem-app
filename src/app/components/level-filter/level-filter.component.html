@@ -1,0 +1,39 @@
+<div>
+	<div class="form-group">
+		<select class="form-control input-lg">
+			<option selected>وحدات المستوي اﻷول</option>
+			<option value="1">وحدات المستوي اﻷول</option>
+			<option value="2">وحدات المستوي اﻷول</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<select class="form-control input-lg">
+			<option selected>وحدات المستوي الثاني</option>
+			<option value="1">وحدات المستوي الثاني</option>
+			<option value="2">وحدات المستوي الثاني</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<select (change)="handleChange($event)" class="form-control input-lg">
+			<option selected>وحدات المستوي الثالث</option>
+			<option value="1">وحدات المستوي الثالث</option>
+			<option value="2">وحدات المستوي الثالث</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<select class="form-control input-lg">
+			<option selected>وحدات المستوي الرابع</option>
+			<option value="1">وحدات المستوي الرابع</option>
+			<option value="2">وحدات المستوي الرابع</option>
+		</select>
+	</div>
+	<button class="btn btn-gray">بحــث</button>
+	<div style="clear: both;"></div>
+	<div>
+		<label for="result">التقييمات</label>
+		<select id="result" class="form-control" size="8">
+			<option selected>تقييم الوحدة اﻷولي (روضتي-المستوي الثاني-قبلي)</option>
+			<option>تققثي الوحدة اﻷولي (روضتي-المستوي الثاني-بعدي)</option>
+		</select>
+	</div>
+</div>
