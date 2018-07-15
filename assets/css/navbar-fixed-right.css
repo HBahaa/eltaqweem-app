@@ -1,4 +1,4 @@
-@media (min-width:768px) {
+/*@media (min-width:768px) {
     .container {
         width: 503px
     }
@@ -82,7 +82,6 @@ body {
 @media (min-width:768px) {
     body {
         padding-top: 0;
-        /*margin-right: 232px*/
     }
     .navbar-fixed-right {
         right: 0!important;
@@ -100,4 +99,4 @@ body {
         border-bottom: 4px solid transparent;
         border-right: 4px solid
     }
-}
+}*/
